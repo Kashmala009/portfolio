@@ -1,20 +1,21 @@
 import "./App.css";
-import React from "react";
-import Header from './components/Header'
-import Skills from './components/Skills'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import HomePage from "./components/Hero";
+import AboutPage from "./components/About";
+import Gallery from "./components/Gallery";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
-      <div className="container mx-auto p-6 space-y-16">
-        <Header />
-        <Skills />
-        <Projects />
-        <Contact />
+    <Router>
+      <div>
+        {/* Page Routes */}
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/about" element={<AboutPage />} />
+        </Routes>
       </div>
-    </div>
+    </Router>
   );
 }
 
