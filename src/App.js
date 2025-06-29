@@ -6,16 +6,17 @@ import Gallery from "./components/Gallery";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/portfolio">
       <div>
         {/* Page Routes */}
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/gallery" element={<Gallery />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/gallery" element={<Gallery />} />
         </Routes>
       </div>
-    </Router>
+      </Router>
+   
   );
 }
 

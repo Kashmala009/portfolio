@@ -31,7 +31,7 @@ export default function Hero() {
 
       {/* Right Vertical Sidebar */}
       <div className="fixed right-4 top-1/2 transform -translate-y-1/2 space-y-4 flex flex-col">
-      <Link to='/'><button className="bg-white p-3 rounded-full shadow hover:bg-[#00a79d] hover:text-white transition"><Home /></button></Link>
+      <Link to='/portfolio'><button className="bg-white p-3 rounded-full shadow hover:bg-[#00a79d] hover:text-white transition"><Home /></button></Link>
         <Link to="/about"><button className="bg-white p-3 rounded-full shadow hover:bg-[#00a79d] hover:text-white transition"><User /></button></Link>
         <Link to="/gallery"><button className="bg-white p-3 rounded-full shadow hover:bg-[#00a79d] hover:text-white transition"><GalleryHorizontal /></button></Link>
       </div>
